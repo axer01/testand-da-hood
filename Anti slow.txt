@@ -1,0 +1,4 @@
+game.Players.LocalPlayer.Character.BodyEffects.Movement.ChildAdded:Connect(function(child)
+                wait()
+                child:Destroy()
+            end)
