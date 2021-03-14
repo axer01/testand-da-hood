@@ -1,0 +1,5 @@
+game:GetService'RunService'.Heartbeat:Connect(function()
+            if game:GetService("Players").LocalPlayer.Character.BodyEffects["K.O"].Value == true then
+            game:GetService("Players").LocalPlayer.Character:Destroy()
+        end
+    end)
