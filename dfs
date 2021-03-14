@@ -1,0 +1,12 @@
+while true do
+    wait()
+    for i, v in pairs(workspace.Ignored.Drop:GetChildren()) do
+        if
+            v.Name == "MoneyDrop" and
+                (workspace.Players[game.Players.LocalPlayer.Name].HumanoidRootPart.Position - v.Position).Magnitude < 12
+         then
+            fireclickdetector(v.ClickDetector)
+            wait(.3)
+        end
+    end
+end
